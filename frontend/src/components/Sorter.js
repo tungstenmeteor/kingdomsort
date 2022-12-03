@@ -24,10 +24,13 @@ export default class Sorter extends React.Component {
         let kingdomList = cards.slice(0, 10)
         let landscapesList = cards.slice(10, cards.length-2)
         let playsWithList = cards.slice(cards.length-2)
+        let kingdomSort = kingdomList.sort()
+        let landscapeSort = landscapesList.sort()
+        let playsWithSort = playsWithList.sort()
         return {
-            kingdom: kingdomList,
-            landscapes: landscapesList,
-            playsWith: playsWithList
+            kingdom: kingdomSort,
+            landscapes: landscapeSort,
+            playsWith: playsWithSort
         }
     }
 
